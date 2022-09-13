@@ -8,7 +8,7 @@ type Props = {
   textSize?: string;
 };
 
-const Button = (props: Props) => {
+const Button: React.FC<Props> = (props) => {
   const { children, onClick, bgColor, textColor, textSize } = props;
 
   return (
