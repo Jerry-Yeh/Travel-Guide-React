@@ -36,6 +36,7 @@ const Input: React.ForwardRefRenderFunction<Handler, Props> = (
       {label && <label htmlFor={id}>{label}</label>}
       <input
         ref={inputRef}
+        id={id}
         {...rest}
         className={`w-full h-12 rounded-md border-gray-200 bg-gray-50 text-${textColor} mb-1.5 px-7`}
       />
