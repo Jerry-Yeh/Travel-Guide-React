@@ -2,7 +2,7 @@ import { Fragment, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import './Header.css';
+import blurTransition from './Blur.module.css';
 import logoMobile from 'assets/img/icon/Logo-mobile.svg';
 import logoDesktop from 'assets/img/icon/Logo-desktop.svg';
 import bar from 'assets/img/icon/Bar.svg';
@@ -84,7 +84,7 @@ const Heaader = () => {
       </div>
 
       {/* backdrop */}
-      <CSSTransition in={menuStatus} nodeRef={nodeRef} timeout={1000} classNames="blur" unmountOnExit>
+      <CSSTransition in={menuStatus} nodeRef={nodeRef} timeout={1000} classNames={{ ...blurTransition }} unmountOnExit>
         {() => (
           <div
             ref={nodeRef}

@@ -1,14 +1,14 @@
-.blur-enter {
+.enter {
   opacity: 0;
 }
-.blur-enter-active {
+.enterActive {
   opacity: 1;
   transition: opacity 1s;
 }
-.blur-exit {
+.exit {
   opacity: 1;
 }
-.blur-exit-active {
+.exitActive {
   opacity: 0;
   transition: opacity 1s;
 }
